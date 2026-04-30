@@ -1,56 +1,40 @@
-# Esp32_Wifi_Security_Testing
-ESP32 WiFi Network Scanner (Security Testing)
-Overview-
-This project demonstrates WiFi network scanning and signal analysis using the ESP32 microcontroller.
-It detects nearby WiFi networks and displays information such as network name (SSID), signal strength (RSSI), and channel.
+# 🔐 WiFi Penetration Tool (ESP32-Based)
 
-The purpose of this project is to understand wireless networking concepts and embedded system communication in a controlled environment.
+## 📡 HCCAPX Serializer
+- Implemented an HCCAPX serialization module that converts captured Wi-Fi handshake frames into binary format  
+- Enables seamless integration with downstream components such as web interfaces and analysis tools  
 
-Hardware Used
-ESP32 Development Board
-USB Cable
-Laptop with Arduino IDE
-Software Used
-Arduino IDE
-ESP32 Board Library
-Serial Monitor
-Working Principle
-The ESP32 has an integrated WiFi radio module capable of scanning nearby wireless networks.
+---
 
-The microcontroller periodically performs a scan and retrieves information about available networks including:
+## 📖 Further Reading
+- Academic paper: https://excel.fit.vutbr.cz/submissions/2021/048/48.pdf  
 
-SSID (Network Name)
-RSSI (Signal Strength)
-Channel Number
-These parameters help engineers analyze wireless network conditions.
+---
 
-Signal strength interpretation:
+## ⚙️ Hardware Setup
+Built and tested primarily on **ESP32-DEVKITC-32E**, compatible with **ESP32-WROOM-32**
 
--30 dBm → Excellent signal
--50 dBm → Good signal
--70 dBm → Weak signal
+### 🧩 Components
+- ESP32 DevKit board  
+- 3.7V Li-Pol battery  
+- 3.3V voltage regulator  
 
-Project Structure
-esp32-wifi-security-testing
-│
-├── code
-│   └── wifi_scan_demo.ino
-├── docs
-│   └── working_principle.md
-├── images
-│   └── esp32_serial_output.png
-└── README.md
-How to Run
-Install Arduino IDE
-Install ESP32 board package
-Upload the code to ESP32
-Open Serial Monitor
-Observe nearby WiFi networks
-Applications
-Wireless network analysis
-IoT network monitoring
-Embedded systems learning
-Cybersecurity education
-Disclaimer
-This project is developed strictly for educational and research purposes.
-It should only be used in controlled environments to understand wireless network behavior.
+💡 Optimized for low-cost and compact deployment  
+
+---
+
+## 🔋 Power Consumption
+- Average usage: **~100mA during active operations**
+
+---
+
+## 🔍 Key Highlights
+- Explored Wi-Fi protocol vulnerabilities (802.11) in controlled environments  
+- Demonstrated embedded network testing using ESP32  
+- Strengthened knowledge in packet capture and embedded security  
+
+---
+
+## ⚠️ Disclaimer
+This project is for **educational and ethical security research only**  
+Use only on authorized networks
